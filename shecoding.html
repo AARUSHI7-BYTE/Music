@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC- my hobby</title>
+    <button class="theme-button">Change theme</button>
+    <style>
+        h1{
+            color: black;
+            text-align: center;
+        }
+        h2{
+            color: black;
+            text-align: center;
+        }
+        p{
+            color: black;
+            line-height: 1.5;
+        }
+        body{
+            background-color: #1e1e1e
+        }
+        footer{
+            color: white;
+            text-align: center;
+            margin: 12px 0;
+            font-size: larger;
+        }
+        .container{
+            max-width: 600px;
+            background-color: white;
+            padding-left: 10vh;
+            padding-right: 10vh;
+            margin: auto;
+            
+         
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+            border: 1px solid plum;
+            background-color: white;
+            border-radius: 20px;
+            font-size: larger;
+            font-weight: bold;
+            transition:all 150ms ease-in-out;
+            
+        }
+        button:hover{
+            cursor:pointer;
+        }
+        .theme-button{
+            font-size: larger;
+            background-color: black;
+            color: white;
+        }
+        .theme-button:hover{
+            background-color: white;
+            color: black;
+
+        }
+        .tantrums{
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+        .tantrums:hover{
+            filter: contrast(80%);
+            transform: scale(1.1);
+
+        }
+        .boyfriend{
+              border-radius: 10px;
+            transition: all 150ms ease-in-out;
+
+        }
+        .boyfriend:hover{
+             filter: contrast(80%);
+            transform: scale(1.1);
+
+        }
+        .Rollup {
+             border-radius: 10px;
+            transition: all 150ms ease-in-out;
+
+        }
+        .Rollup:hover{
+               filter: contrast(80%);
+            transform: scale(1.1);
+
+        }
+
+        .ishaare{
+                       border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+
+        .ishaare:hover{
+                 filter: contrast(80%);
+            transform: scale(1.1);
+
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap:15px;
+        }
+        .grid img{
+            width: 100%;
+        }
+        .light{
+            background-color: rgb(139, 186, 242);
+        }
+        .light .container{
+            background-color: #1e1e1e;
+            color: white;
+        }
+        .light h1{
+            color: white;
+        }
+        .light h2{
+            color: white;
+        }
+        .light p{
+            color: white;
+        }
+        .hm{
+            text-decoration:underline;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1> Music </h1>
+    <h2> My favourate hobby </h2>
+    <div class="grid">
+    <a href="https://youtu.be/Q-8po1Zza-8?si=FL0aVjTK7lxrZQmO">
+
+    <img src="https://a10.gaanacdn.com/gn_img/albums/oAJbDlbnL8/JbDLnEX0bn/size_m_1734595717.jpg" alt="" class="tantrums">
+    </a>
+
+    <a href="https://youtu.be/h0w7ZAwI9TE?si=CpRPiBJFR-J_hblG">
+    <img src="https://c.saavncdn.com/187/Boyfriend-Hindi-2023-20241126155251-500x500.jpg" alt="" class="boyfriend">
+    </a>
+
+    <a href="https://youtu.be/9E4AuXNprto?si=kyeRGb4sc1d8bB1o">
+    <img src="https://i.ytimg.com/vi/rGGpjqgd9wI/mqdefault.jpg" alt="" class="Rollup">
+    </a>
+
+    <a href="https://youtu.be/Z_AyWO3nmlo?si=RHnoOpKWaDm-VBrN">
+    <img src="https://i.ytimg.com/vi/Z_AyWO3nmlo/maxresdefault.jpg" alt="" class="ishaare">
+    </a>
+    </div>
+
+
+    <p>Music is a universal language that transcends cultural and linguistic barriers, offering a powerful way to express emotions, tell stories, and connect people across the world. It exists in countless forms—from classical symphonies to modern pop, jazz improvisations to traditional folk melodies—each style reflecting the unique history and values of its creators. Beyond entertainment, music can influence mood, boost memory, and even aid in healing, making it an essential part of human life throughout history. Whether performed live or recorded, music has the capacity to inspire, comfort, and bring people together in shared experiences.</p>
+    </div>
+    <footer>
+        coded by
+        <a href="https://www.linkedin.com/in/aarushi-garg-98ba02246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="hm"> aarushi❤️ </a>
+    </footer>
+    <script>
+        function change(){
+            let body = document.querySelector("body")
+            if(body.classList.contains("light")){
+                body.classList.remove("light");
+            }else{
+                body.classList.add("light");
+            }
+
+
+        }
+        let themebutton = document.querySelector(".theme-button");
+        themebutton.addEventListener('click', change)
+    </script>
+</body>
+</html>
